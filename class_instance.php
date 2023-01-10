@@ -1,13 +1,31 @@
 <?php
-class Cars{
+class Vehicle{
 
-      function getting(){
-            echo "Hello Student";
-      }
+}
 
-      function getting2(){
-            echo "Hello guy";
-      }
+class Bike extends Vehicle {
+
+    function getting()
+    {
+        echo "Hello Student";
+    }
+
+    function getting2()
+    {
+        echo "Hello guy";
+    }
+}
+class Cars extends Vehicle {
+
+    function getting()
+    {
+        echo "Hello Student";
+    }
+
+    function getting2()
+    {
+        echo "Hello guy";
+    }
 
 }
 
@@ -15,6 +33,6 @@ class Cars{
 $bmw = new Cars();
 $mecedes = new Cars();
 
-$bmw->getting2();
+$bmw->getting2()."<br>";
 
 $mecedes->getting();
